@@ -7,7 +7,6 @@ import {
   handleOperator,
   handlePosNeg,
   handleClear,
-  selectCurrentValue,
 } from './store/CalculatorSlice';
 
 import {
@@ -21,7 +20,6 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Button from './components/Button';
 import Row from './components/Row';
-import {Provider} from 'react-redux';
 
 function App(): JSX.Element {
   // Calculator
@@ -56,8 +54,14 @@ function App(): JSX.Element {
   const textStyle = {
     color: isDarkMode ? Colors.white : Colors.black,
   };
-  const buttonStyle = {
-    backgroundColor: isDarkMode ? '#454545' : '#A9A9A9',
+  const numberBtnStyle = {
+    backgroundColor: isDarkMode ? '#606060' : '#707070',
+  };
+  const utilityBtnStyle = {
+    backgroundColor: isDarkMode ? '#303039' : '#505059',
+  };
+  const operatorBtnStyle = {
+    backgroundColor: isDarkMode ? '#909099' : '#303059',
   };
 
   //App
@@ -82,87 +86,87 @@ function App(): JSX.Element {
       <View style={[backgroundStyle, styles.calcContainer]}>
         <Row>
           <Button
-            style={buttonStyle}
+            style={utilityBtnStyle}
             value="C"
             onPress={() => handlePress('clear')}></Button>
           <Button
-            style={buttonStyle}
+            style={utilityBtnStyle}
             value="+/-"
             onPress={() => handlePress('posneg')}></Button>
           <Button
-            style={buttonStyle}
+            style={utilityBtnStyle}
             value="Del"
             onPress={() => handlePress('delete')}></Button>
           <Button
-            style={buttonStyle}
+            style={operatorBtnStyle}
             value="÷"
             onPress={() => handlePress('operator', '/')}></Button>
         </Row>
         <Row>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="7"
             onPress={() => handlePress('number', 7)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="8"
             onPress={() => handlePress('number', 8)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="9"
             onPress={() => handlePress('number', 9)}></Button>
           <Button
-            style={buttonStyle}
+            style={operatorBtnStyle}
             value="x"
             onPress={() => handlePress('operator', '*')}></Button>
         </Row>
         <Row>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="4"
             onPress={() => handlePress('number', 4)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="5"
             onPress={() => handlePress('number', 5)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="6"
             onPress={() => handlePress('number', 6)}></Button>
           <Button
-            style={buttonStyle}
+            style={operatorBtnStyle}
             value="-"
             onPress={() => handlePress('operator', '-')}></Button>
         </Row>
         <Row>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="1"
             onPress={() => handlePress('number', 1)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="2"
             onPress={() => handlePress('number', 2)}></Button>
           <Button
-            style={buttonStyle}
+            style={numberBtnStyle}
             value="3"
             onPress={() => handlePress('number', 3)}></Button>
           <Button
-            style={buttonStyle}
+            style={operatorBtnStyle}
             value="+"
             onPress={() => handlePress('operator', '+')}></Button>
         </Row>
         <Row>
           <Button
-            style={[buttonStyle, {flex: 5}]}
+            style={[numberBtnStyle, {flex: 5}]}
             value="0"
             onPress={() => handlePress('number', 0)}></Button>
           <Button
-            style={buttonStyle}
+            style={utilityBtnStyle}
             value="."
             onPress={() => handlePress('number', '.')}></Button>
           <Button
-            style={buttonStyle}
+            style={operatorBtnStyle}
             value="="
             onPress={() => handlePress('equal')}></Button>
         </Row>
