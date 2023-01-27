@@ -1,9 +1,11 @@
 import {configureStore} from '@reduxjs/toolkit';
 import CalculatorSlice from './CalculatorSlice';
+import ThemeSlice from './ThemeSlice';
 
 export const store = configureStore({
   reducer: {
     calculator: CalculatorSlice,
+    theme: ThemeSlice,
   },
 });
 

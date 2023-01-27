@@ -4,6 +4,7 @@ import {StyleSheet, Text, TouchableOpacity, useColorScheme} from 'react-native';
 type ButtonProps = {
   value: string;
   style: object;
+  textStyle: object;
   onPress: any;
 };
 
@@ -12,7 +13,7 @@ function Button(props: ButtonProps): JSX.Element {
     <TouchableOpacity
       style={[styles.button, props.style]}
       onPress={props.onPress}>
-      <Text style={styles.text}>{props.value}</Text>
+      <Text style={[styles.text, props.textStyle]}>{props.value}</Text>
     </TouchableOpacity>
   );
 }
