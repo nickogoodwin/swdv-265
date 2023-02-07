@@ -1,7 +1,7 @@
 import {User} from '../types';
 
-export function filterAndSort(users: any, text: string, asc: boolean) {
-  return users
+export function filterAndSort(data: any, text: string, asc: boolean) {
+  return data
     .filter(
       (i: User) =>
         text.length === 0 ||

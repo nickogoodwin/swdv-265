@@ -8,7 +8,9 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
+    justifyContent: 'center',
     paddingTop: 40,
+    backgroundColor: '#252525',
   },
 
   card: {
@@ -56,5 +58,31 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 10,
+  },
+
+  modalView: {
+    margin: 20,
+    backgroundColor: '#191919',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+  },
+
+  buttonClose: {
+    backgroundColor: '#ef233c',
   },
 });

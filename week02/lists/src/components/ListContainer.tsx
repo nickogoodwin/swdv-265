@@ -3,27 +3,38 @@ import List from './List';
 import ListControls from './ListControls';
 import {debounce} from 'lodash';
 import {filterAndSort} from '../utils';
+import MyModal from './MyModal';
 
 export default function ListContainer() {
   const [asc, setAsc] = useState(true);
   const [filter, setFilter] = useState('');
-  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
-    getUsers(filter, asc);
+    if (!data.length) {
+      getUsers();
+    }
+  }, [data]);
+
+  useEffect(() => {
+    filterData(filter, asc);
   }, [filter, asc]);
 
-  const getUsers = (filter: string, asc: boolean) => {
+  const filterData = (filter: string, asc: boolean) => {
+    setFilteredData(filterAndSort(data, filter, asc));
+  };
+
+  const getUsers = () => {
     setLoading(true);
     setTimeout(() => {}, 1000);
-    console.log(filter);
     try {
       return fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
-        .then(json => filterAndSort(json, filter, asc))
         .then(data => {
           setData(data);
+          setFilteredData(data);
           setLoading(false);
         });
     } catch (e) {
@@ -41,13 +52,16 @@ export default function ListContainer() {
   const onSort = () => setAsc(!asc);
 
   return (
-    <List
-      Controls={ListControls}
-      data={data}
-      asc={asc}
-      onFilter={debouncedFilter}
-      onSort={onSort}
-      loading={loading}
-    />
+    <>
+      <MyModal message="Fetching Data" loading={loading}></MyModal>
+      <List
+        Controls={ListControls}
+        data={filteredData}
+        asc={asc}
+        onFilter={debouncedFilter}
+        onSort={onSort}
+        loading={loading}
+      />
+    </>
   );
 }
