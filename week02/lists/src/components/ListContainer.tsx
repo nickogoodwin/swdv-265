@@ -3,7 +3,7 @@ import List from './List';
 import ListControls from './ListControls';
 import {debounce} from 'lodash';
 import {filterAndSort} from '../utils';
-import MyModal from './MyModal';
+import LoadingModal from './LoadingModal';
 
 export default function ListContainer() {
   const [asc, setAsc] = useState(true);
@@ -28,7 +28,6 @@ export default function ListContainer() {
 
   const getUsers = () => {
     setLoading(true);
-    setTimeout(() => {}, 1000);
     try {
       return fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
@@ -53,7 +52,7 @@ export default function ListContainer() {
 
   return (
     <>
-      <MyModal message="Fetching Data" loading={loading}></MyModal>
+      <LoadingModal message="Fetching Data" loading={loading}></LoadingModal>
       <List
         Controls={ListControls}
         data={filteredData}
