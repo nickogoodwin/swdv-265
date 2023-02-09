@@ -7,7 +7,7 @@ interface ModalProps {
   loading: boolean;
 }
 
-export default function MyModal(props: ModalProps): JSX.Element {
+export default function LoadingModal(props: ModalProps): JSX.Element {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Modal animationType="slide" transparent={true} visible={props.loading}>
