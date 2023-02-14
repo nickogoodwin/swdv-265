@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, FlatList} from 'react-native';
 import styles from '../../styles';
 import {useAppSelector} from '../hooks/reduxHooks';
 import {useGetCoinQuery} from '../services';
 import Colors from '../theme/Colors';
 import LoadingModal from '../components/LoadingModal';
+import type {IPriceIndex} from '../types';
 import RateCard from '../components/RateCard';
 
 function Rates(): JSX.Element {
@@ -38,6 +39,11 @@ function Rates(): JSX.Element {
               : Colors.light.ground,
           },
         ]}>
+        {/* <FlatList
+          data={Object.values(data!.bpi)}
+          renderItem={({item}: {item: IPriceIndex}) => {
+            return <RateCard data={item} />;
+          }}></FlatList> */}
         <RateCard data={data?.bpi.USD} />
         <RateCard data={data?.bpi.GBP} />
         <RateCard data={data?.bpi.EUR} />

@@ -1,15 +1,14 @@
 import {configureStore} from '@reduxjs/toolkit';
-import SampleSlice from './SampleSlice';
 import ThemeSlice from './ThemeSlice';
-import { coinApi } from '../services';
+import {coinApi} from '../services';
 
 export const store = configureStore({
   reducer: {
-    sample: SampleSlice,
     theme: ThemeSlice,
-    [coinApi.reducerPath]: coinApi.reducer
+    [coinApi.reducerPath]: coinApi.reducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(coinApi.middleware)
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(coinApi.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
