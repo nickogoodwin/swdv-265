@@ -17,6 +17,8 @@ import com.ReactNativeBlobUtil.ReactNativeBlobUtilPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-pdf
 import org.wonday.pdf.RCTPdfView;
+// react-native-pdf-light
+import com.alpha0010.pdf.PdfViewPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -75,6 +77,7 @@ public class PackageList {
       new ReactNativeBlobUtilPackage(),
       new RNGestureHandlerPackage(),
       new RCTPdfView(),
+      new PdfViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

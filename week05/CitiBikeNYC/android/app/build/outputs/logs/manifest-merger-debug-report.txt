@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\nicko\.gradle\caches
 MERGED from [:react-native-blob-util] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-48:12
 MERGED from [:react-native-gesture-handler] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-pdf] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-pdf-light] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf-light\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -155,7 +156,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ni
 	android:name
 		ADDED from C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:6:7-38
 		ADDED from C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:6:7-38
-activity#com.nickogoodwinrntemplate.MainActivity
+activity#com.citibikenyc.MainActivity
 ADDED from C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:12:7-23:18
 	android:label
 		ADDED from C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:14:9-41
@@ -195,6 +196,8 @@ MERGED from [:react-native-gesture-handler] C:\Users\nicko\apps\swdv-265\week05\
 MERGED from [:react-native-gesture-handler] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-pdf] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-pdf] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pdf-light] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf-light\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pdf-light] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-pdf-light\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41

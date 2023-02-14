@@ -103,9 +103,9 @@ android {
     // compileSdkVersion rootProject.ext.compileSdkVersion
     compileSdkVersion 31
 
-    namespace "com.nickogoodwinrntemplate"
+    namespace "com.citibikenyc"
     defaultConfig {
-        applicationId "com.nickogoodwinrntemplate"
+        applicationId "com.citibikenyc"
         // minSdkVersion rootProject.ext.minSdkVersion
         minSdkVersion 21
         targetSdkVersion rootProject.ext.targetSdkVersion

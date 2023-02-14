@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nickogoodwinrntemplate"
+    package="com.citibikenyc"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -26,7 +26,7 @@
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
     <application
-        android:name="com.nickogoodwinrntemplate.MainApplication"
+        android:name="com.citibikenyc.MainApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -39,7 +39,7 @@
             android:name="com.facebook.react.devsupport.DevSettingsActivity"
             android:exported="false" />
         <activity
-            android:name="com.nickogoodwinrntemplate.MainActivity"
+            android:name="com.citibikenyc.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
             android:exported="true"
             android:label="@string/app_name"
@@ -54,7 +54,7 @@
 
         <provider
             android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
-            android:authorities="com.nickogoodwinrntemplate.provider"
+            android:authorities="com.citibikenyc.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -63,7 +63,7 @@
         </provider>
         <provider
             android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-            android:authorities="com.nickogoodwinrntemplate.fileprovider"
+            android:authorities="com.citibikenyc.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -72,7 +72,7 @@
         </provider>
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.nickogoodwinrntemplate.androidx-startup"
+            android:authorities="com.citibikenyc.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

@@ -1,7 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 import {useColorScheme} from 'react-native';
-import {Theme} from '../types'
-
+import {Theme} from '../types';
 
 const initialState: Theme = {
   isDarkMode: useColorScheme() === 'dark',

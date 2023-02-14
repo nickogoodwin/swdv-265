@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.nickogoodwinrntemplate"
+3    package="com.citibikenyc"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -43,7 +43,7 @@
 27
 28    <application
 28-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:5:5-24:19
-29        android:name="com.nickogoodwinrntemplate.MainApplication"
+29        android:name="com.citibikenyc.MainApplication"
 29-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:6:7-38
 30        android:allowBackup="false"
 30-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:10:7-34
@@ -68,7 +68,7 @@
 40-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\debug\AndroidManifest.xml:11:84-108
 41        <activity
 41-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:12:7-23:18
-42            android:name="com.nickogoodwinrntemplate.MainActivity"
+42            android:name="com.citibikenyc.MainActivity"
 42-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:13:9-37
 43            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 43-->C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\android\app\src\main\AndroidManifest.xml:15:9-118
@@ -96,7 +96,7 @@
 55-->[:react-native-blob-util] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-45:20
 56            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
 56-->[:react-native-blob-util] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-70
-57            android:authorities="com.nickogoodwinrntemplate.provider"
+57            android:authorities="com.citibikenyc.provider"
 57-->[:react-native-blob-util] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-60
 58            android:exported="false"
 58-->[:react-native-blob-util] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-37
@@ -113,7 +113,7 @@
 64-->[:react-native-webview] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 65            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
 65-->[:react-native-webview] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-83
-66            android:authorities="com.nickogoodwinrntemplate.fileprovider"
+66            android:authorities="com.citibikenyc.fileprovider"
 66-->[:react-native-webview] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
 67            android:exported="false"
 67-->[:react-native-webview] C:\Users\nicko\apps\swdv-265\week05\CitiBikeNYC\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
@@ -130,7 +130,7 @@
 73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\nicko\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 74            android:name="androidx.startup.InitializationProvider"
 74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\nicko\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-75            android:authorities="com.nickogoodwinrntemplate.androidx-startup"
+75            android:authorities="com.citibikenyc.androidx-startup"
 75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\nicko\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 76            android:exported="false" >
 76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\nicko\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37

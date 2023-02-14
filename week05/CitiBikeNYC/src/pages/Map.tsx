@@ -4,7 +4,7 @@ import styles from '../../styles';
 import {useAppSelector} from '../hooks/reduxHooks';
 import Colors from '../theme/Colors';
 import Pdf from 'react-native-pdf';
-import {WebView} from 'react-native-webview';
+import {Dimensions} from 'react-native';
 
 function Map(): JSX.Element {
   const isDarkMode = useAppSelector(state => state.theme.isDarkMode);
@@ -38,10 +38,14 @@ function Map(): JSX.Element {
         ]}>
         <Pdf
           source={source}
-          style={{width: '100%', height: '100%'}}
+          style={{
+            width: Dimensions.get('window').width,
+            height: Dimensions.get('window').height,
+          }}
           onLoadComplete={numberOfPages =>
             console.log(`number of pages: ${numberOfPages}`)
-          }></Pdf>
+          }
+        />
         <Text
           style={{color: isDarkMode ? Colors.dark.text : Colors.light.text}}>
           Map Screen
